@@ -1,8 +1,10 @@
 :root {
-    --color-var: #006D77; /* color azul de la barra de navegacion */
-    --color-header: #83C5BE; /* color de fondo titulo */
-    --color-sobre-nosotros: #FFDDD2; /* color de fondo sobre nosotros */
-    --color-footer: #E29578; /* color de fondo footer */
+    --color-nav-bar: #370617; /* color azul de la barra de navegacion */
+    --color-header: #6A040F; /* color de fondo titulo */
+    --color-sobre-nosotros: #0A0908; /* color de fondo sobre nosotros */
+    --color-footer: #E07A5F; /* color de fondo footer */
+    --color-font: #B9DAC6; /* color de letras */
+    --color-border: #EAE0D5; /* color de los bordes */
 }
 
 body {
@@ -18,7 +20,7 @@ body {
     width: 100%;
     padding-right: 35px;
     margin-left: -15px;
-    background-color: var(--color-var);
+    background-color: var(--color-nav-bar);
     justify-content: space-between;
 }
 .img_nav_bar {
@@ -36,7 +38,7 @@ body {
     display: block;
     font-size: 1.3rem;
     padding: 0.5rem;
-    color: #FFDDD2;
+    color: var(--color-font);
 }
 /* ----- /barra de navegación ----- */
 
@@ -51,7 +53,7 @@ body {
     height: 100vh;
     font-size: 30px;
     background-color: var(--color-header);
-    color: #131515;
+    color: var(--color-font);
     font-size: 50px;
     margin-left: -10px;
     padding: 0 10px 0 10px;
@@ -62,8 +64,8 @@ body {
 .section_sobre_nosotros {
     background-color: var(--color-sobre-nosotros);
     margin-left: -10px;
-    padding: 0 10px 0 10px;
-    color: #131515;
+    padding: 0 10px 10px 10px;
+    color: var(--color-font);
     width: 100%;
 }
 .article_section_sobre_nosotros {
@@ -72,6 +74,12 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 50px;
+}
+.div_sobre_nosotros {
+    width: 52%;
+}
+.div_sobre_nosotros_dos {
+    width: 27%;
 }
 #article_two {
     flex-direction: row-reverse;
@@ -83,13 +91,13 @@ body {
 .img_section_sobre_nosotros {
     width: 500px;
     height: 300px;
-    border: #131515 2px solid;
+    border: var(--color-border) 2px solid;
     border-radius: 3%;
 }
 .article_three_img {
     width: 350px;
     height: 300px;
-    border: #131515 2px solid;
+    border: var(--color-border) 2px solid;
     border-radius: 3%;
 }
 /* ----- /Sobre nosotros ----- */
@@ -98,6 +106,15 @@ body {
 footer {
     width: 100%;
     background-color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    padding: 0px 10px 0 10px;
+    text-align: center;
 }
-
+.img_footer {
+    max-width: 60px;
+    height: auto;
+}
 /* ----- /Footer ----- */
