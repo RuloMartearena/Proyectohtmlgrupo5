@@ -1,16 +1,103 @@
-header {
-    display: flex;
+:root {
+    --color-var: #006D77; /* color azul de la barra de navegacion */
+    --color-header: #83C5BE; /* color de fondo titulo */
+    --color-sobre-nosotros: #FFDDD2; /* color de fondo sobre nosotros */
+    --color-footer: #E29578; /* color de fondo footer */
 }
-.header-img {
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ----- barra de navegación ----- */
+.section_nav_bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 35px;
+    margin-left: -15px;
+    background-color: var(--color-var);
+    justify-content: space-between;
+}
+.img_nav_bar {
+    display: block;
+    max-width: 80px;
     height: auto;
-    max-width: 200px;
+    margin-left: 20px;
 }
-.nav-ul {
+.ul_nav_bar {
     display: flex;
-}
-.ul-a {
-    text-decoration: none;
-    margin: 0px 10px 0px 0px;
-    color: black;
     list-style: none;
 }
+.a_ul {
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: #FFDDD2;
+}
+/* ----- /barra de navegación ----- */
+
+/* ----- Nombre del cine ----- */
+.header_cine_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30%;
+    width: 100%;
+    height: 100vh;
+    font-size: 30px;
+    background-color: var(--color-header);
+    color: #131515;
+    font-size: 50px;
+    margin-left: -10px;
+    padding: 0 10px 0 10px;
+}
+/* ----- /Nombre del cine ----- */
+
+/* ----- Sobre nosotros ----- */
+.section_sobre_nosotros {
+    background-color: var(--color-sobre-nosotros);
+    margin-left: -10px;
+    padding: 0 10px 0 10px;
+    color: #131515;
+    width: 100%;
+}
+.article_section_sobre_nosotros {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+}
+#article_two {
+    flex-direction: row-reverse;
+}
+#article_three {
+    justify-content: space-between;
+    text-align: center;
+}
+.img_section_sobre_nosotros {
+    width: 500px;
+    height: 300px;
+    border: #131515 2px solid;
+    border-radius: 3%;
+}
+.article_three_img {
+    width: 350px;
+    height: 300px;
+    border: #131515 2px solid;
+    border-radius: 3%;
+}
+/* ----- /Sobre nosotros ----- */
+
+/* ----- Footer ----- */
+footer {
+    width: 100%;
+    background-color: var(--color-footer);
+}
+
+/* ----- /Footer ----- */
