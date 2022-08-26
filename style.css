@@ -1,0 +1,16 @@
+header {
+    display: flex;
+}
+.header-img {
+    height: auto;
+    max-width: 200px;
+}
+.nav-ul {
+    display: flex;
+}
+.ul-a {
+    text-decoration: none;
+    margin: 0px 10px 0px 0px;
+    color: black;
+    list-style: none;
+}
