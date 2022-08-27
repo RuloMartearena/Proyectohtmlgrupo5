@@ -1,0 +1,64 @@
+:root {
+    --color-background: #6A040F; /* color de fondo */
+    --color-font: #A1C181; /* color de letras */
+    --color-section-peliculas: #370617; /* color de fondo section */
+    --color-font-section: #B9DAC6; /* color de letras section */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-font);
+}
+.header{
+    text-align: center;
+}
+/* ----- Peliculas ----- */
+.section-peliculas {
+    border: 1px white solid;
+    background-color: var(--color-section-peliculas);
+    color: var(--color-font-section);
+}
+@media (min-width: 1200px) {
+    .section-peliculas {
+        width: 70vw;
+    }
+}
+@media (max-width: 800px) {
+    .section__article {
+        flex-direction: column;
+    }
+    .article__img {
+        width: 100px;
+        height: 100px;
+    }
+}
+.section__h2{
+    text-align: center;
+}
+.section__article{
+    display: flex;
+}
+.article__img{
+    width: 26%;
+    height: auto;
+    border: #081c15 2px solid;
+    border-radius: 2%;
+    margin: 0 8px 8px 8px;
+}
+.article__block {
+    margin: 0 5px 0 8px;
+}
+.block__another-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.another-block__p{
+    width: 75%;
+    line-height: 1.5rem;
+}
+.another-block__block{
+    text-align: center;
+}
+/* ----- /Pelicula ----- */
